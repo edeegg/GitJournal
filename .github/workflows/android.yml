@@ -6,9 +6,9 @@ name: Android
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
+#  push:
+ #   branches:
+ #     - master
 
 jobs:
   Build:
@@ -50,7 +50,7 @@ jobs:
       - name: Build
         run: ./scripts/build_android.sh
       - name: "Upload Artifact"
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: APK
           path: "*.apk"
