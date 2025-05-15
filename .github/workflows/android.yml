@@ -11,6 +11,7 @@ on:
 
 jobs:
   Build:
+    name: Build & Release
     runs-on: ubuntu-latest
     steps:
       - name: Give more Disk Space
